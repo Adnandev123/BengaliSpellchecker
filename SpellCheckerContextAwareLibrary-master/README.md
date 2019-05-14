@@ -8,14 +8,15 @@ This module use BKTree with Levenshtein distance for first retrival of candidate
 
 ### How to use:
 
-The following class contains a method that takes a sentence and find out the misspelled words and returns a autometically corrected sentence.
+The following class contains a method that takes a sentence and find out the misspelled words and returns a autometically corrected sentence, also returns a map of suggestion words.
 
-    SpellcheckerForSearch.java
+    SpellcheckerForSearchPhonetic.java
     ================================
     
-    
-    SpellcheckerForSearch spSearch = SpellcheckerForSearch.getInstance();
-    System.out.println(spSearch.getSuggessionFromQuery("পদ্দা সেতু")); 
+        SpellcheckerForSearchPhonetic spSearch = SpellcheckerForSearchPhonetic.getInstance();
+
+        System.out.println(spSearch.getSuggessionFromQuery("মোঃ এমদাদুল হক চৌধুরী")); //maskata
+        System.out.println(spSearch.getSuggessionMap());
     
 ### Methods
 
